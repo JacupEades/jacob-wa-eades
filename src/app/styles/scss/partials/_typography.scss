@@ -1,0 +1,173 @@
+@use "./varibales" as vars;
+
+// font-family: 'Manrope', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font: font-style font-variant font-weight font-size/line-height font-family;
+// MOBILE FIRST THEN DESKTOP
+
+// NAVIGATION
+@mixin HeaderName() {
+  font:
+    normal normal 700 1.5rem / normal "Playfair Display",
+    serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 700 2rem / normal "Playfair Display",
+      serif;
+  }
+}
+
+// LABEL
+@mixin LLarge() {
+  font:
+    normal normal 700 1.25rem / 1.75rem "Manrope",
+    serif;
+}
+
+// DISPLAY
+@mixin DLarge() {
+  font:
+    normal normal 500 3rem / 4rem "Playfair Display",
+    serif;
+}
+
+@mixin DMedium() {
+  font:
+    normal normal 500 2.25rem / 3rem "Playfair Display",
+    serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 500 2.5rem / 3.25rem "Playfair Display",
+      serif;
+  }
+}
+
+@mixin BodyD() {
+  font:
+    normal normal 400 2.25rem / 3rem "Manrope",
+    sans-serif;
+}
+
+// BODY
+@mixin BodyXLarge() {
+  font:
+    normal normal 400 1.75rem / 2.25rem "Manrope",
+    sans-serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 400 2rem / 2.5rem "Manrope",
+      sans-serif;
+  }
+}
+
+@mixin BodyXXLarge() {
+  font:
+    normal normal 400 2rem / 2.5rem "Manrope",
+    sans-serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 400 2.25rem / 3rem "Manrope",
+      sans-serif;
+  }
+}
+
+@mixin BodyLarge() {
+  font:
+    normal normal 400 1rem / 1.5rem "Manrope",
+    sans-serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 400 1.25rem / 1.75rem "Manrope",
+      sans-serif;
+  }
+}
+
+@mixin BodyBoldLarge() {
+  font:
+    normal normal 700 1rem / 1.5rem "Manrope",
+    sans-serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 700 1.25rem / 1.75rem "Manrope",
+      sans-serif;
+  }
+}
+
+@mixin BodyMedium() {
+  font:
+    normal normal 400 0.875rem / 1.25rem "Manrope",
+    sans-serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 400 1rem / 1.5rem "Manrope",
+      sans-serif;
+  }
+}
+
+@mixin BodyBoldMedium() {
+  font:
+    normal normal 700 0.875rem / 1.25rem "Manrope",
+    sans-serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 700 1rem / 1.5rem "Manrope",
+      sans-serif;
+  }
+}
+
+@mixin BodySmall() {
+  font:
+    normal normal 400 0.875rem / 1.5rem "Manrope",
+    sans-serif;
+}
+
+@mixin BodyBoldXSmall() {
+  font:
+    normal normal 700 0.75rem / 1.125rem "Manrope",
+    sans-serif;
+}
+
+// HEADING
+@mixin HeadingLarge() {
+  font:
+    normal normal 500 1.75rem / 2.5rem "Playfair Display",
+    serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 500 2rem / 2.5rem "Playfair Display",
+      serif;
+  }
+}
+
+@mixin HeadingMedium() {
+  font:
+    normal normal 500 1.25rem / 1.75rem "Playfair Display",
+    serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 500 1.5rem / 2rem "Playfair Display",
+      serif;
+  }
+}
+
+@mixin HeadingSmall() {
+  font:
+    normal normal 500 1rem / 1.5rem "Playfair Display",
+    serif;
+
+  @media screen and (min-width: 37.5rem) {
+    font:
+      normal normal 500 1.25rem / 1.75rem "Playfair Display",
+      serif;
+  }
+}

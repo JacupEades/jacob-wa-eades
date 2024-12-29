@@ -1,0 +1,22 @@
+@use "../partials/typography";
+@use "../partials/varibales";
+@use "../partials/mixins";
+
+.homeMain {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .homeMain {
+  }
+}
+
+@media screen and (min-width: 56.25rem) {
+  .homeMain {
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .homeMain {
+  }
+}
