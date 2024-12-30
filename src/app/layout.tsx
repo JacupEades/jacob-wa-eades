@@ -1,6 +1,7 @@
-import "./styles/globals.css";
-import Providers from "./redux/provider";
-import type { Metadata } from "next";
+import './styles/globals.css';
+import Providers from './redux/provider';
+import type { Metadata } from 'next';
+import HeaderPageNav from './components/Header/HeaderPageNav';
 
 export const metadata: Metadata = {
   title: "Jacob's Website",
@@ -9,14 +10,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
         <Providers>
-          {/* <HeaderNavigation /> */}
+          <HeaderPageNav />
           {children}
           {/* <Footer /> */}
         </Providers>

@@ -1,4 +1,4 @@
-@use url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Playfair+Display:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Playfair+Display:wght@500&display=swap');
 
 /* font-family: 'Manrope', sans-serif;
 font-family: 'Playfair Display', serif; */
@@ -16,9 +16,10 @@ body {
 }
 
 body {
+  min-height: 100dvh;
   color: #373f53;
   background-color: #f9f6f0;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 a {

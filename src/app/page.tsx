@@ -1,9 +1,9 @@
-import styles from "./styles/scss/pages/Home.module.scss";
+import './styles/scss/pages/Home.scss';
 
 export default function Home() {
   return (
-    <main className={styles.homeMain}>
-      <p>Hello World!</p>
+    <main className='Home-main'>
+      <p>Hi, I&apos;m Jacob Eades</p>
     </main>
   );
 }
