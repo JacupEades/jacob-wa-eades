@@ -1,0 +1,30 @@
+.HomePage {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 6rem);
+	height: auto;
+	width: 100vw;
+	margin-top: 3rem;
+	background: var(--background-subtle);
+}
+
+.HomePage-main {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+/* Header */
+.HomePage-header {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 3rem;
+	width: 100%;
+	background: var(--background-main);
+}
+.HomePage-headerHead {
+	color: var(--typo-main);
+}
+.HomePage-headerSub {
+	color: var(--typo-secondary);
+}

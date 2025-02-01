@@ -1,0 +1,54 @@
+.ColorsPage {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 6rem);
+	height: auto;
+	width: 100vw;
+	margin-top: 3rem;
+	background: var(--background-subtle);
+}
+
+.ColorsPage-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2rem 3rem;
+	gap: 2rem;
+}
+
+/* Header */
+.ColorsPage-header {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 3rem;
+	width: 100%;
+	background: var(--background-main);
+}
+.ColorsPage-headerHead {
+	color: var(--typo-main);
+}
+.ColorsPage-headerSub {
+	color: var(--typo-secondary);
+}
+
+.ColorsPage-section {
+	display: flex;
+	gap: 0.5rem;
+	flex-direction: column;
+}
+.ColorsPage-colors {
+	display: grid;
+	grid-template-columns: 15rem 15rem 15rem;
+	gap: 1rem;
+	width: 50%;
+}
+.ColorsPage-colorBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 15rem;
+	height: 5rem;
+	border: 1px solid var(--foreground-subtle);
+	border-radius: 1rem;
+}

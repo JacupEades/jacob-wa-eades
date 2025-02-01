@@ -1,33 +1,40 @@
 /* Light Theme */
 :root {
-	--background-main: #f5f5f5; /* Light gray */
-	--background-subtle: #ffffff; /* Pure white for subtle elements */
-	--background-secondary: #eaeaea; /* Slightly darker gray for contrast */
+	--background-main: #e6d5ff;
+	--background-secondary: #f4e9ff;
+	--background-subtle: #faf5ff;
 
-	--foreground-main: #333333; /* Dark gray for primary text */
-	--foreground-subtle: #4f4f4f; /* Softer dark gray for secondary text */
-	--foreground-secondary: #000000; /* Black for strong emphasis text */
+	--foreground-main: #1e1433;
+	--foreground-secondary: #3d275a;
+	--foreground-subtle: #5a3d7c;
 
-	--accent-main: #2c3e50; /* Navy blue for main accent */
-	--accent-subtle: #3a78c8; /* Muted blue for subtle accents */
-	--accent-secondary: #b22222; /* Dark red for secondary accents */
+	--accent-main: #ffc131;
+	--accent-subtle: #ffd575;
+	--accent-secondary: #ffecc1;
+
+	--typo-main: #faf5ff;
+	--typo-subtle: #d9d4de;
+	--typo-secondary: #918a97;
 }
 
 /* Dark Theme */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background-main: #2c3e50; /* Dark blue-gray */
-		--background-subtle: #34495e; /* Slightly lighter blue-gray */
-		--background-secondary: #1c2833; /* Darker gray for secondary elements */
+/* Dark Theme */
+[data-theme="dark"] {
+	--background-main: #1a102b;
+	--background-secondary: #2a1b3d;
+	--background-subtle: #3c2a57;
 
-		--foreground-main: #ffffff; /* White for primary text */
-		--foreground-subtle: #eaeaea; /* Light gray for secondary text */
-		--foreground-secondary: #fdf6e3; /* Soft beige for warm accents */
+	--foreground-main: #f0eaff;
+	--foreground-secondary: #d8bfff;
+	--foreground-subtle: #b39cd0;
 
-		--accent-main: #5dade2; /* Sky blue for main accent */
-		--accent-subtle: #f4d03f; /* Bright yellow for subtle accents */
-		--accent-secondary: #f39c12; /* Vivid orange for secondary accents */
-	}
+	--accent-main: #a084e8;
+	--accent-subtle: #f4c430;
+	--accent-secondary: #ff96a9;
+
+	--typo-main: #faf5ff;
+	--typo-subtle: #d9d4de;
+	--typo-secondary: #918a97;
 }
 
 html,
@@ -37,8 +44,6 @@ body {
 }
 
 body {
-	color: var(--foreground);
-	background: var(--background);
 	font-family: Arial, Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -48,15 +53,10 @@ body {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	color: var(--foreground-main);
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
 }
