@@ -1,0 +1,62 @@
+/* Light Theme */
+:root {
+	--background-main: #f5f5f5; /* Light gray */
+	--background-subtle: #ffffff; /* Pure white for subtle elements */
+	--background-secondary: #eaeaea; /* Slightly darker gray for contrast */
+
+	--foreground-main: #333333; /* Dark gray for primary text */
+	--foreground-subtle: #4f4f4f; /* Softer dark gray for secondary text */
+	--foreground-secondary: #000000; /* Black for strong emphasis text */
+
+	--accent-main: #2c3e50; /* Navy blue for main accent */
+	--accent-subtle: #3a78c8; /* Muted blue for subtle accents */
+	--accent-secondary: #b22222; /* Dark red for secondary accents */
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-main: #2c3e50; /* Dark blue-gray */
+		--background-subtle: #34495e; /* Slightly lighter blue-gray */
+		--background-secondary: #1c2833; /* Darker gray for secondary elements */
+
+		--foreground-main: #ffffff; /* White for primary text */
+		--foreground-subtle: #eaeaea; /* Light gray for secondary text */
+		--foreground-secondary: #fdf6e3; /* Soft beige for warm accents */
+
+		--accent-main: #5dade2; /* Sky blue for main accent */
+		--accent-subtle: #f4d03f; /* Bright yellow for subtle accents */
+		--accent-secondary: #f39c12; /* Vivid orange for secondary accents */
+	}
+}
+
+html,
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+}
