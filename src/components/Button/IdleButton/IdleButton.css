@@ -1,0 +1,76 @@
+.IdleButton {
+	all: unset;
+	box-sizing: border-box;
+	position: relative;
+	display: inline-flex;
+	height: 2rem;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.25rem 0.75rem;
+	border-radius: 0 7.5rem 7.5rem 0;
+	border: 1px solid #cfd9e9;
+	background: #fff;
+	transition: background-color 0.2s ease;
+	cursor: pointer;
+	isolation: isolate;
+}
+.IdleButton:disabled {
+	cursor: not-allowed;
+	background-color: #5a9bd4;
+}
+
+/* Loading Effect */
+.IdleButton-loadverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	border-radius: 0 7.5rem 7.5rem 0;
+	background-color: #0056b3;
+	transition: width 1s linear;
+	z-index: -1;
+}
+.IdleButton.IdleButton--isLoading .IdleButton-loadverlay {
+	visibility: visible;
+	display: block;
+	width: 100%;
+	opacity: 1;
+}
+.IdleButton:not(.IdleButton--isLoading) .IdleButton-loadverlay {
+	visibility: hidden;
+	width: 0%;
+	opacity: 0;
+	transition: none;
+}
+
+/* Overlay */
+.IdleButton-overlay {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 0 7.5rem 7.5rem 0;
+	background: transparent;
+	opacity: 0;
+	transition: all 0.1s ease-in-out;
+}
+.IdleButton-overlay:hover,
+.IdleButton:hover .IdleButton-overlay,
+.IdleButton-content:hover + .IdleButton-overlay {
+	opacity: 1;
+	background: rgba(37, 75, 134, 0.08);
+}
+/* Overlay Pressed */
+.IdleButton-overlay:active,
+.IdleButton:active .IdleButton-overlay,
+.IdleButton-content:active + .IdleButton-overlay {
+	opacity: 1;
+	background: rgba(37, 75, 134, 0.12);
+}
+
+/* Button Text */
+.IdleButton-text {
+	position: relative;
+}

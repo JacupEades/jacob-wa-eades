@@ -8,12 +8,6 @@
 	background: var(--background-subtle);
 }
 
-.HomePage-main {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem;
-}
-
 /* Header */
 .HomePage-header {
 	display: flex;
@@ -27,4 +21,18 @@
 }
 .HomePage-headerSub {
 	color: var(--typo-secondary);
+}
+
+.HomePage-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+.HomePage-todo {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem 3rem;
+}
+.HomePage-todoList {
+	padding-left: 1.25rem;
 }

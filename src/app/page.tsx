@@ -9,7 +9,18 @@ export default function HomePage() {
 					Next js, React 19, site for learning and develoment fun.
 				</h2>
 			</header>
-			<main className="HomePage-main"></main>
+			<main className="HomePage-main">
+				<section className="HomePage-todo">
+					<h1>Todo List</h1>
+					<ul className="HomePage-todoList">
+						<li>Add package Motion</li>
+						<li>Add ideas list</li>
+						<li>Add WIP list</li>
+						<li>Add completed features list</li>
+						<li>Fix Site colors</li>
+					</ul>
+				</section>
+			</main>
 		</div>
 	);
 }

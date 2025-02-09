@@ -1,0 +1,66 @@
+.BazaarClonePage {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 6rem);
+	height: auto;
+	width: 100vw;
+	margin-top: 3rem;
+	background: var(--background-subtle);
+}
+
+/* Header */
+.BazaarClonePage-header {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 3rem;
+	width: 100%;
+	background: var(--background-main);
+}
+.BazaarClonePage-headerHead {
+	color: var(--typo-main);
+}
+.BazaarClonePage-headerSub {
+	color: var(--typo-secondary);
+}
+
+/* Main */
+.BazaarClonePage-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2rem 3rem;
+	gap: 2rem;
+}
+
+/* Boards */
+.BazaarClonePage-enemySection,
+.BazaarClonePage-playerSection {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	background: red;
+	width: 100%;
+}
+.BazaarClonePage-playerSection {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	background: blue;
+	width: 100%;
+}
+
+/* Items */
+.BazaarClonePage-item {
+	height: 10rem;
+	/* padding: 0.5rem 1rem; */
+}
+.BazaarClonePage-item--small {
+	grid-column: span 1;
+	background: greenyellow;
+}
+.BazaarClonePage-item--medium {
+	grid-column: span 2;
+	background: burlywood;
+}
+.BazaarClonePage-item--large {
+	grid-column: span 3;
+	background: turquoise;
+}
