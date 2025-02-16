@@ -1,0 +1,19 @@
+/* Page */
+.FightingFantasyPage {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 6rem);
+	height: auto;
+	width: 100vw;
+	margin-top: 3rem;
+	background: var(--background-subtle);
+}
+
+.FightingFantasyPage-cardSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 2rem;
+}

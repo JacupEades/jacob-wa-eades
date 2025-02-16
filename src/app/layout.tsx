@@ -8,6 +8,7 @@ const navItems = [
 	{ label: "Colors", href: "/colors" },
 	{ label: "Bazaar Clone", href: "/bazaar-clone" },
 	{ label: "Idle Game", href: "/idle-game" },
+	{ label: "Fighting Fantasy", href: "/fighting-fantasy" },
 ];
 
 export const metadata: Metadata = {

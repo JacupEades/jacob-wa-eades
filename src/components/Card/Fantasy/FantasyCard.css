@@ -1,0 +1,17 @@
+.FantasyCard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10rem;
+	height: 8rem;
+	padding: 1rem;
+	border: 2px solid #000;
+	border-radius: 0.5rem;
+	background: #fff;
+	transition: all 200ms ease-in-out;
+}
+.FantasyCard:hover {
+	border: 2px solid #747474;
+	border-radius: 0.5rem;
+	background: #edd8ff;
+}

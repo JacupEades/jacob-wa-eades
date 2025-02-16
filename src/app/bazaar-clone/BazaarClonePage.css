@@ -29,10 +29,18 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 2rem 3rem;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 /* Boards */
+.BazaarClonePage-board,
+.BazaarClonePage-unplacedItems {
+	display: flex;
+}
+.BazaarClonePage-unplacedItems {
+	height: 15rem;
+}
+
 .BazaarClonePage-enemySection,
 .BazaarClonePage-playerSection {
 	display: grid;
@@ -53,14 +61,11 @@
 	/* padding: 0.5rem 1rem; */
 }
 .BazaarClonePage-item--small {
-	grid-column: span 1;
 	background: greenyellow;
 }
 .BazaarClonePage-item--medium {
-	grid-column: span 2;
 	background: burlywood;
 }
 .BazaarClonePage-item--large {
-	grid-column: span 3;
 	background: turquoise;
 }
