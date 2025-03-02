@@ -3,8 +3,5 @@
 	height: 3rem;
 	width: 100%;
 	padding: 0.625rem 3rem;
-	background: var(--background-main);
 	text-align: center;
-	color: var(--typo-main);
-	border-top: 1px solid var(--foreground-secondary);
 }

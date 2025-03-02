@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { PageNav, PageFooter } from "@/components";
+import "../../public/tokens.css";
 
 import "./globals.css";
 
 const navItems = [
 	{ label: "Home", href: "/" },
-	{ label: "Colors", href: "/colors" },
+	{ label: "Component Library", href: "/component-lib" },
 	{ label: "Bazaar Clone", href: "/bazaar-clone" },
+	{ label: "Bible Page", href: "/bible-page" },
 	{ label: "Idle Game", href: "/idle-game" },
 	{ label: "Fighting Fantasy", href: "/fighting-fantasy" },
 ];

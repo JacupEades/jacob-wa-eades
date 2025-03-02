@@ -1,0 +1,9 @@
+.BiblePage {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 6rem);
+	height: auto;
+	width: 100vw;
+	margin-top: 3rem;
+	background: rgba(255, 0, 0, 0.362);
+}

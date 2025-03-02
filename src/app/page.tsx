@@ -18,6 +18,7 @@ export default function HomePage() {
 						<li>Add WIP list</li>
 						<li>Add completed features list</li>
 						<li>Fix Site colors</li>
+						<li>Nav categories: Games, Faith, Portfolio</li>
 					</ul>
 				</section>
 			</main>

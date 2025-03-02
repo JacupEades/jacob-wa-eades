@@ -5,7 +5,6 @@
 	height: auto;
 	width: 100vw;
 	margin-top: 3rem;
-	background: var(--background-subtle);
 }
 
 /* Header */
@@ -15,13 +14,10 @@
 	padding: 2rem 3rem;
 	margin: 0 15rem;
 	width: 100%;
-	background: var(--background-main);
 }
 .IdleGamePage-headerHead {
-	color: var(--typo-main);
 }
 .IdleGamePage-headerSub {
-	color: var(--typo-secondary);
 }
 
 /* Main */
@@ -58,15 +54,12 @@
 }
 .IdleGamePage-asideLeft p,
 .IdleGamePage-asideRight p {
-	color: var(--typo-main);
 }
 .IdleGamePage-asideLeft {
-	background: var(--foreground-subtle);
 }
 .IdleGamePage-asideRight {
 	right: 0;
 	left: unset;
-	background: var(--foreground-subtle);
 }
 
 /* Placeholder stuff */

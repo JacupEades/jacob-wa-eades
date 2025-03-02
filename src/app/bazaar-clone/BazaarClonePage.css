@@ -5,7 +5,6 @@
 	height: auto;
 	width: 100vw;
 	margin-top: 3rem;
-	background: var(--background-subtle);
 }
 
 /* Header */
@@ -14,13 +13,10 @@
 	flex-direction: column;
 	padding: 2rem 3rem;
 	width: 100%;
-	background: var(--background-main);
 }
 .BazaarClonePage-headerHead {
-	color: var(--typo-main);
 }
 .BazaarClonePage-headerSub {
-	color: var(--typo-secondary);
 }
 
 /* Main */

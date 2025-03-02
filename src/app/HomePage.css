@@ -5,7 +5,7 @@
 	height: auto;
 	width: 100vw;
 	margin-top: 3rem;
-	background: var(--background-subtle);
+	background: #fff;
 }
 
 /* Header */
@@ -14,13 +14,10 @@
 	flex-direction: column;
 	padding: 2rem 3rem;
 	width: 100%;
-	background: var(--background-main);
 }
 .HomePage-headerHead {
-	color: var(--typo-main);
 }
 .HomePage-headerSub {
-	color: var(--typo-secondary);
 }
 
 .HomePage-main {

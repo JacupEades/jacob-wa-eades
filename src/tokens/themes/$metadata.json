@@ -1,0 +1,11 @@
+{
+  "tokenSetOrder": [
+    "global/color",
+    "global/spacing",
+    "global/typography",
+    "system/light",
+    "system/dark",
+    "device/desktop",
+    "device/mobile"
+  ]
+}
