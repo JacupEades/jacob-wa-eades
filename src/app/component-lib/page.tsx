@@ -1,69 +1,52 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import "./ComponentLibrary.css";
+import { useState } from 'react';
+import './ComponentLibrary.css';
+import ComponentSection from './ComponentSection';
+
+const COMPONENT_SECTIONS = [
+	'Color',
+	'Typography',
+	'Buttons',
+	'Forms',
+	'Layout',
+	// Add more sections as needed
+];
 
 /**
  * TODO:
  * - Add layout for selecting components
  * - Update the color sections classes and main page classes
- *
+ * - Move COMPONENT_SECTIONS and auto gen
+ * - Add more sections
  */
 export default function ComponentLibrary() {
-	const [colorTokens, setColorTokens] = useState<
-		{ name: string; value: string }[]
-	>([]);
-
-	useEffect(() => {
-		const colorVars: { name: string; value: string }[] = [];
-		const rootStyle = getComputedStyle(document.documentElement);
-
-		// Loop through all loaded stylesheets
-		for (const sheet of document.styleSheets) {
-			try {
-				if (!sheet.cssRules) continue;
-
-				for (const rule of sheet.cssRules) {
-					if (rule instanceof CSSStyleRule && rule.selectorText === ":root") {
-						// Extract all variables from `:root`
-						for (const style of rule.style) {
-							if (style.startsWith("--color-")) {
-								const value = rootStyle.getPropertyValue(style).trim();
-								if (value) {
-									colorVars.push({ name: style, value });
-								}
-							}
-						}
-					}
-				}
-			} catch (e) {
-				console.warn("Skipping inaccessible stylesheet", e);
-			}
-		}
-
-		setColorTokens(colorVars);
-	}, []);
+	const [selection, setSelection] = useState('Color');
 
 	return (
 		<div className="ComponentLibrary">
+			{/* Aside */}
+			<aside className="ComponentLibrary-aside">
+				<h1>Section Selection</h1>
+				<nav className="ComponentLibrary-nav">
+					<ul className="ComponentLibrary-navList">
+						{COMPONENT_SECTIONS.map((section) => (
+							<li key={section} className="ComponentLibrary-navItem">
+								<button
+									className={`ComponentLibrary-navButton ${
+										selection === section ? 'ComponentLibrary-navButton--active' : ''
+									}`}
+									onClick={() => setSelection(section)}
+									aria-current={selection === section ? 'page' : undefined}>
+									{section}
+								</button>
+							</li>
+						))}
+					</ul>
+				</nav>
+			</aside>
 			<main className="ComponentLibrary-main">
-				<header className="ComponentLibrary-header">
-					<h1 className="ComponentLibrary-headerHead">Color Page</h1>
-				</header>
-				<section className="color-grid">
-					{colorTokens.map(({ name, value }) => (
-						<div className="color-box" key={name}>
-							<div
-								className="color-preview"
-								style={{ backgroundColor: value }}
-							/>
-							<div className="color-info">
-								<p className="color-name">{name}</p>
-								<p className="color-value">{value}</p>
-							</div>
-						</div>
-					))}
-				</section>
+				<ComponentSection selection={selection} />
 			</main>
 		</div>
 	);
