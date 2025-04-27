@@ -1,0 +1,43 @@
+.Button {
+	all: unset;
+	position: relative;
+	box-sizing: border-box;
+
+	display: flex;
+	border-radius: var(--border-radius-xs, 0.25rem);
+
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.5rem;
+
+	background: var(--color-background-primary-bold, #3751ff);
+	color: var(--color-foreground-neutral-inverse, #ffffff);
+	padding: 0.5rem 1rem;
+
+	transition: all 200ms ease-in-out;
+	caret-color: transparent;
+	cursor: pointer;
+	z-index: 1;
+}
+.Button:hover {
+	box-shadow: 0px 1px 8px 0px rgb(0, 0, 0);
+	z-index: 2;
+}
+.Button:not(.Button--isDisabled)[tabindex]:focus-visible {
+	outline: 3px solid var(--color-border-focus, #6e7fff);
+	outline-offset: 0.125rem;
+}
+
+/* Sizes */
+.Button--small {
+}
+.Button--medium {
+}
+.Button--large {
+}
+
+/* States */
+.Button--isLoading {
+}
+.Button--isDisabled {
+}
